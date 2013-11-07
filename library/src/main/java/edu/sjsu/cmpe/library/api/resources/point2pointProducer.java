@@ -48,7 +48,7 @@ public class point2pointProducer {
         msg.setLongProperty("id", System.currentTimeMillis());
         System.out.println(msg.getText());
         producer.send(msg);
-        producer.send(session.createTextMessage("SHUTDOWN"));
+        //producer.send(session.createTextMessage("SHUTDOWN"));
         connection.close();
     }
 
